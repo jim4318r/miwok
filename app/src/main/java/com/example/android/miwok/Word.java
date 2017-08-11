@@ -13,9 +13,13 @@ public class Word {
     /** Miwok translations for the word */
     private String mMiwokTranslation;
 
-    public Word(String defaultTranslation, String miwokTranslation) {
+    //drawable resource id
+    private int mImageResourceId;
+
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mImageResourceId = imageResourceId;
     }
 
     /**
@@ -30,5 +34,9 @@ public class Word {
      */
     public String getMiwokTranslation() {
         return mMiwokTranslation;
+    }
+
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
 }

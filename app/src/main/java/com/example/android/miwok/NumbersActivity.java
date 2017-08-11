@@ -6,6 +6,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+
 public class NumbersActivity extends AppCompatActivity {
 
     @Override
@@ -14,8 +15,9 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
+        words.add(new Word("one","lutti", R.drawable.donut));
+        words.add(new Word("two","otiiko", R.drawable.donut));
+        /*
         words.add(new Word("three","tolooksu"));
         words.add(new Word("four","oyyisa"));
         words.add(new Word("five","massokka"));
@@ -24,6 +26,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("eight","kawinta"));
         words.add(new Word("nine","wo'e"));
         words.add(new Word("ten","na'aacha"));
+        */
 
 
 
